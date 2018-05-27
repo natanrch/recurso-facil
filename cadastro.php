@@ -10,7 +10,7 @@
       <fieldset>
         <legend>Formulário de cadastro</legend>
         <label>Nome:</label><input type="text" name="nome"></br>
-        <label>RG:</label><input type="number" name="rg"></br>
+        <label>RG:</label><input type="text" name="rg"></br>
         <label>CPF:</label><input type="text" name="cpf"></br>
         <label>Identidade:</label><input type="file" name="identidade"></input></br>
         <label>Comprovante de residência:</label><input type="file" name="comprovante_residencia"></input></br>
