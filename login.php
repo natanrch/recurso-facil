@@ -23,7 +23,7 @@
 			<div class="form-group">
 				<label for="senha">Senha</label>
 				<input type="password" name="senha" id="senha" class="form-control"> 
-				<a href="#" class="text-center">Cadastre-se</a>
+				<a href="cadastro.php">Cadastre-se</a>
 			</div>
 			<button type="submit" class="btn btn-primary">Entrar</button>
 			

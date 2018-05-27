@@ -2,12 +2,15 @@
     display: flex;
     justify-content: center;
 }
-form {
+.formulario__login {
     width: 50%;
     margin: 30vh;
 }
+<<<<<<< HEAD
 
 
 /*======CADASTRO========*/
 
 /*======================*/
+=======
+>>>>>>> b01c9bf61e40a6a55ea2d30b5310cdbe41c356b5
