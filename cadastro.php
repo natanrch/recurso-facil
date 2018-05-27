@@ -9,7 +9,7 @@
         <legend>Informações Pessoais</legend>
         <label>Nome:</label><input type="text" name="nome">
         <label>RG:</label><input type="number" name="rg">
-        <label>CPF:</label><input type="text" name="nome">
+        <label>CPF:</label><input type="text" name="cpf">
       </fieldset>
     </form>
   </body>
