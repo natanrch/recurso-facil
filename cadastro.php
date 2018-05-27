@@ -7,7 +7,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </head>
   <body>
+<<<<<<< HEAD
     <form method="post" action="" name="cadastro" class="">
+=======
+    <form method="post" action="adicona-usuario.php" enctype="multipart/form-data" name="cadastro" class="col-6">
+>>>>>>> 91e8c5004fca85fe2105532992123887b2e842f6
       <fieldset>
         <legend>Formulário de cadastro</legend>
         <div class="form-group align-self-center">
