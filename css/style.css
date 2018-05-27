@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 .form_cad{
   width:50%;
   border:1px solid red;
 }
+=======
+.container {
+    display: flex;
+    justify-content: center;
+}
+form {
+    width: 50%;
+    margin: 30vh;
+}
+
+>>>>>>> 4aecc77bee16727218cfb155376dc4184df6e68c
