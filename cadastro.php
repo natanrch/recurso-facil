@@ -6,14 +6,20 @@
   <body>
     <form method="post" action="" name="cadastro">
       <fieldset>
-        <legend>Informações Pessoais</legend>
-        <label>Nome:</label><input type="text" name="nome">
-        <label>RG:</label><input type="number" name="rg">
-        <label>CPF:</label><input type="text" name="cpf">
+        <legend>Formulário de cadastro</legend>
+        <label>Nome:</label><input type="text" name="nome"></br>
+        <label>RG:</label><input type="number" name="rg"></br>
+        <label>CPF:</label><input type="text" name="cpf"></br>
+        <label>Identidade:</label><input type="file" name="identidade"></input></br>
+        <label>Comprovante de residência:</label><input type="file" name="comprovante_residencia"></input></br>
+        <label>Selfie com identidade:</label><input type="file" name="selfie_identidade"></input></br>
+        <input type="submit" value="Enviar" name="enviar">
       </fieldset>
+
     </form>
   </body>
 </html>
+<!--
 Nesse tutorial vamos aprender como fazer
 um sistema de upload bem fácil. Ideal para iniciantes
 em PHP.
@@ -47,28 +53,28 @@ o Upload
 para o servidor:
 
 <?php
-$pasta = "/pasta/onde/o/arquivo/sera/salvo";
+// $pasta = "/pasta/onde/o/arquivo/sera/salvo";
 /* Coloque aqui,
 a pasta no servidor onde os arquivos serão salvos.
 Atenção: se você não
 souber sua pasta no servidor, contate o administrador
 do mesmo. */
 
-$dest = $pasta."/".$file_name; // Não
-altere esta variável.
+// $dest = $pasta."/".$file_name; // Não
+// altere esta variável.
 
-if(!move_uploaded_file($file, $dest)) { // Executa o
-comando do upload no servidor
-   echo "Não foi possível
-enviar o arquivo!"; /* Caso não foi possível
-enviar o arquivo,
-   mostra o erro. */
-} else {
-   echo "Arquivo enviado com sucesso!";
+// if(!move_uploaded_file($file, $dest)) { // Executa o
+// comando do upload no servidor
+   // echo "Não foi possível
+// enviar o arquivo!"; /* Caso não foi possível
+// enviar o arquivo,
+   // mostra o erro. */
+// } else {
+   // echo "Arquivo enviado com sucesso!";
 /* Caso o arquivo tenha sido enviado
    com sucesso, mostra a mensagem de
 sucesso. */
-}
+// }
 ?>
 
 Obs.: A pasta deve estar com o chmod 777.
