@@ -6,11 +6,13 @@
     width: 50%;
     margin: 30vh;
 }
-<<<<<<< HEAD
-
-
-/*======CADASTRO========*/
-
-/*======================*/
-=======
->>>>>>> b01c9bf61e40a6a55ea2d30b5310cdbe41c356b5
+.form_cad{
+  /* border:1px solid red; */
+  /* display:flex; */
+  justify-content:center;
+}
+.container_form{
+  margin:0 auto;
+  border:1px solid rgba(0,0,0,.3);
+  border-radius:5px;
+}
