@@ -1,5 +1,9 @@
 <?php 
+if(isset($_POST['email']) && isset($_POST['senha'])){
+	$usuario = $_POST['email'];
+	$senha = $_POST['senha'];
 
+}
 
 
  ?>
@@ -19,12 +23,12 @@
  	<div class="container">
 	 	<form action="" method="post" class="formulario__login">
 			<div class="col-auto mt-5">
-     			<label class="sr-only" for="usuario">Usuário</label>
+     			<label class="sr-only" for="email">Usuário</label>
      		 	<div class="input-group mb-2">
         		<div class="input-group-prepend">
           			<div class="input-group-text"><i class="fas fa-user"></i></div>
         		</div>
-       				<input type="text" class="form-control" id="usuario" placeholder="Usuário">
+       				<input type="email" class="form-control" id="email" placeholder="E-mail" name="email">
       			</div>
     		</div>
 			<div class="col-auto mt-4">
@@ -33,7 +37,7 @@
         		<div class="input-group-prepend">
           			<div class="input-group-text"><i class="fas fa-key"></i></div>
         		</div>
-       				<input type="text" class="form-control" id="senha" placeholder="Senha">
+       				<input type="text" class="form-control" id="senha" placeholder="Senha" name="senha">
       			</div>
 			</div>
 				<a href="cadastro.php" class="col-auto text-white formulario__link-cadastro">Cadastre-se</a>
