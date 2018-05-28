@@ -15,7 +15,7 @@
  </head>
  <body>
  	<div class="container ">
-	 	<form action="" method="post">
+	 	<form action="" method="post" class="formulario__login">
 		 	<div class="form-group">
 				<label for="usuario">Usuario</label>
 				<input type="text" name="usuario" id="usuario" class="form-control"> 
@@ -23,9 +23,8 @@
 			<div class="form-group">
 				<label for="senha">Senha</label>
 				<input type="password" name="senha" id="senha" class="form-control"> 
-				<a href="#" class="text-right">Cadastre-se</a>
+				<a href="cadastro.php">Cadastre-se</a>
 			</div>
-			
 			<button type="submit" class="btn btn-primary">Entrar</button>
 			
 		</form>
