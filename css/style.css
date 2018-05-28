@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
 }
-form {
+.formulario__login {
     width: 50%;
     margin: 30vh;
 }
