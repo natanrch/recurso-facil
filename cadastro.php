@@ -9,7 +9,7 @@
   <body>
 
     <div class="container_form col-6 mt-4">
-      <form method="post" action="" name="cadastro" class="form_cad">
+      <form enctype="multipart/form-data" method="post" action="adicona-usuario.php"  name="cadastro" class="form_cad">
         <fieldset>
           <legend class="text-center">Formulário de cadastro</legend>
           <div class="form-group align-self-center">
