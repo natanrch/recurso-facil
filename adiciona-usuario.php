@@ -24,14 +24,16 @@ $nomeSelfie = $arquivoSelfie['name'];
 $nomeTempSelfie = $arquivoSelfie['tmp_name'];
 move_uploaded_file($nomeTempSelfie, 'imagens/'.$nomeSelfie);
 
-$nome = $_POST['nome'];
+$usuario = new Usuario();
+
+/*$nome = $_POST['nome'];
 $rg = $_POST['rg'];
 $cpf = $_POST['cpf'];
 $endereco = $_POST['endereco'];
 $senha = $_POST['senha'];
 $email = $_POST['email'];
 
-/*$usuario = new Usuario($nome, $rg, $cpf, $endereco, $senha, $email, $nomeIdentidade, $nomeEndereco, $nomeSelfie);*/
+$usuario = new Usuario($nome, $rg, $cpf, $endereco, $senha, $email, $nomeIdentidade, $nomeEndereco, $nomeSelfie);*/
 
 $usuario->nome = $_POST['nome'];
 $usuario->rg = $_POST['rg'];
