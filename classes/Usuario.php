@@ -34,17 +34,17 @@ class Usuario {
     {
         $conexao = Conexao::pegarConexao();
         $inserir = $conexao->prepare("INSERT INTO usuarios(nome, rg, cpf, endereco, senha, email, identidade_arquivo, endereco_arquivo, selfie_arquivo) VALUES (:NOME, :RG, :CPF, :ENDERECO, :SENHA, :EMAIL, :IDENTIDADE_ARQUIVO, :ENDERECO_ARQUIVO, :SELFIE_ARQUIVO) ");
-        $inserir->bindValue(":NOME", $nome, PDO::PARAM_STR);
-        $inserir->bindValue(":RG", $rg, PDO::PARAM_STR);
-        $inserir->bindValue(":CPF", $cpf, PDO::PARAM_STR);
-        $inserir->bindValue(":ENDERECO", $endereco, PDO::PARAM_STR);
-        $inserir->bindValue(":SENHA", $senha, PDO::PARAM_STR);
-        $inserir->bindValue(":EMAIL", $email, PDO::PARAM_STR);
-        $inserir->bindValue(":IDENTIDADE_ARQUIVO", $identidade_arquivo, PDO::PARAM_STR);
-        $inserir->bindValue(":ENDERECO_ARQUIVO", $endereco_arquivo, PDO::PARAM_STR);
-        $inserir->bindValue(":SELFIE_ARQUIVO", $selfie_arquivo, PDO::PARAM_STR);
+        $inserir->bindValue(":NOME", $this->nome, PDO::PARAM_STR);
+        $inserir->bindValue(":RG", $this->rg, PDO::PARAM_STR);
+        $inserir->bindValue(":CPF", $this->cpf, PDO::PARAM_STR);
+        $inserir->bindValue(":ENDERECO", $this->endereco, PDO::PARAM_STR);
+        $inserir->bindValue(":SENHA", $this->senha, PDO::PARAM_STR);
+        $inserir->bindValue(":EMAIL", $this->email, PDO::PARAM_STR);
+        $inserir->bindValue(":IDENTIDADE_ARQUIVO", $this->identidade_arquivo, PDO::PARAM_STR);
+        $inserir->bindValue(":ENDERECO_ARQUIVO", $this->endereco_arquivo, PDO::PARAM_STR);
+        $inserir->bindValue(":SELFIE_ARQUIVO", $this->selfie_arquivo, PDO::PARAM_STR);
         $inserir->execute();
-        return $inser;
+        return $inserir;
     }
 
 }
