@@ -2,22 +2,55 @@
   <head>
     <title>Cadastro</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" src="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </head>
   <body>
-    <form method="post" action="" name="cadastro">
+    <form method="post" action="adicona-usuario.php" enctype="multipart/form-data" name="cadastro" class="col-6">
       <fieldset>
         <legend>Formulário de cadastro</legend>
-        <label>Nome:</label><input type="text" name="nome"></br>
-        <label>RG:</label><input type="text" name="rg"></br>
-        <label>CPF:</label><input type="text" name="cpf"></br>
-        <label>Identidade:</label><input type="file" name="identidade"></input></br>
-        <label>Comprovante de residência:</label><input type="file" name="comprovante_residencia"></input></br>
-        <label>Selfie com identidade:</label><input type="file" name="selfie_identidade"></input></br>
-        <label>Cadastro:</label><input type="password" name="senha"></input></br>
-        <label>Confirmar Senha:</label><input type="password" name="conf_senha"></input></br>
-        <input type="submit" value="Enviar" name="enviar">
+        <div class="form-group align-self-center">
+          <div class="">
+            <label>Nome:</label>
+            <input type="text" name="nome" class="form-control">
+          </div>
+          <div class="">
+            <label>RG:</label>
+            <input type="text" name="rg" class="form-control">
+          </div>
+          <div class="">
+            <label>CPF:</label>
+            <input type="text" name="cpf" class="form-control">
+          </div>
+          <div class="">
+            <label>Identidade:</label>
+            <input type="file" name="identidade" class="">
+          </div>
+          <div class="">
+            <label>Endereço:</label>
+            <input type="text" name="endereco" class="form-control">
+          </div>
+          <div class="">
+            <label>Comprovante de residência:</label>
+            <input type="file" name="comprovante_residencia" class="">
+          </div>
+          <div class="">
+            <label>Selfie com identidade:</label>
+            <input type="file" name="selfie_identidade" class="">
+          </div>
+          <div class="">
+            <label>Cadastro:</label>
+            <input type="password" name="senha" class="form-control">
+          </div>
+          <div class="">
+            <label>Confirmar Senha:</label>
+            <input type="password" name="conf_senha" class="form-control">
+          </div>
+          <div class="">
+            <input type="submit" value="Enviar" name="enviar" class="btn">
+          </div>
+        </div>
       </fieldset>
 
     </form>
