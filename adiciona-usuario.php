@@ -31,9 +31,9 @@ $endereco = $_POST['endereco'];
 $senha = $_POST['senha'];
 $email = $_POST['email'];
 
-$usuario = new Usuario($nome, $rg, $cpf, $endereco, $senha, $email, $nomeIdentidade, $nomeEndereco, $nomeSelfie);
+/*$usuario = new Usuario($nome, $rg, $cpf, $endereco, $senha, $email, $nomeIdentidade, $nomeEndereco, $nomeSelfie);*/
 
-/*$usuario->nome = $_POST['nome'];
+$usuario->nome = $_POST['nome'];
 $usuario->rg = $_POST['rg'];
 $usuario->cpf = $_POST['cpf'];
 $usuario->endereco = $_POST['endereco'];
@@ -41,7 +41,7 @@ $usuario->senha = $_POST['senha'];
 $usuario->email = $_POST['email'];
 $usuario->identidade_arquivo = $nomeIdentidade;
 $usuario->endereco_arquivo = $nomeEndereco;
-$usuario->selfie_arquivo = $nomeSelfie;*/
+$usuario->selfie_arquivo = $nomeSelfie;
 
 var_dump($usuario);
 

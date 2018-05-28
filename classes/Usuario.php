@@ -3,18 +3,19 @@
 require_once 'classes/Conexao.php';
 
 class Usuario {
-	protected $id;
-	protected $nome;
-	protected $rg;
-	protected $cpf;
-	protected $endereco;
-	protected $senha;
-	protected $email;
-	protected $identidade_arquivo;
-	protected $endereco_arquivo;
-	protected $selfie_arquivo;
+	public $id;
+	public $nome;
+	public $rg;
+	public $cpf;
+	public $endereco;
+	public $senha;
+	public $email;
+	public $identidade_arquivo;
+	public $endereco_arquivo;
+	public $selfie_arquivo;
 
-	public function __construct($nome, $rg, $cpf, $endereco, $senha, $email, $identidade_arquivo, $endereco_arquivo, $selfie_arquivo) {
+	/*public function __construct($nome, $rg, $cpf, $endereco, $senha, $email, $identidade_arquivo, $endereco_arquivo, $selfie_arquivo) 
+	{
 		$this->nome = $nome;
 		$this->rg = $rg;
 		$this->cpf = $cpf;
@@ -24,6 +25,25 @@ class Usuario {
 		$this->identidade_arquivo = $identidade_arquivo;
 		$this->endereco_arquivo = $endereco_arquivo;
 		$this->selfie_arquivo = $selfie_arquivo;
+	}*/
+
+	public function __construct($email = false) {
+		if ($email) {
+			$this->email = $email;
+			$this->carregar();
+		}
+	}
+
+	public function carregar() 
+	{
+        $conexao = Conexao::pegarConexao();
+        $query = "SELECT email, senha FROM usuarios where email = '".$this->email."'";
+        $resultado = $conexao->query($query);
+        $lista = $resultado->fetchAll();
+        foreach ($lista as $linha) {
+            $this->senha = $linha['senha'];
+            $this->email = $linha['email'];
+        }
 	}
 
     public function inserir()
