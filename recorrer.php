@@ -26,6 +26,10 @@
               <input type="text" name="numero_infracao">
             </div>
             <div>
+              <label>Número da CNH:</label>
+              <input type="text" name="cnh">
+            </div>
+            <div>
               <label>Recurso Próprio:</label><input type="radio" name="procurador" value="falso">
               <label>Procurador:</label><input type="radio" name="procurador" value="true">
             </div>
