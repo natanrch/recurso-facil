@@ -20,29 +20,25 @@
             </ul>
         </div>
         <div class="col direito">
-          <form action="adiciona-recurso.php" method="post" enctype="multipart/form-data">
-            <div>
+          <form class="">
+            <div class="">
               <label>Número do auto de infração:</label>
               <input type="text" name="numero_infracao">
             </div>
             <div>
-              <label>Número da CNH:</label>
-              <input type="text" name="cnh">
-            </div>
-            <div>
-              <label>Recurso Próprio:</label><input type="radio" name="procurador" value="nao">
-              <label>Procurador:</label><input type="radio" name="procurador" value="sim">
+              <label>Recurso Próprio:</label><input type="radio">
+              <label>Procurador:</label><input type="radio">
             </div>
             <div>
               <h6>Documentos Obrigatórios</h6>
-              <label>CNH:</label><input type="file" name="cnh_arquivo" /><br/>
-              <label>Comprovante de Residência:</label><input type="file" name="comprovante_residencia" /><br/>
-              <label>Documento do Veículo:</label><input type="file" name="documento_veiculo" /><br/>
-              <label>Cópia da Multa:</label><input type="file" name="multa_arquivo" /><br/>
-              <label>Comprovante de pagamento da taxa p/ recurso :</label><input type="file" name="comprovante" /><br/>
-              <label>Procuração (Se processo for feito por procurador):</label><input type="file" name="procuracao" /><br/>
-              <label>Outros Documentos:</label><input type="file" name="outros_documentos" /><br/>
-              <label>Razões do Recurso:</label><textarea name="razoes"></textarea><br/>
+              <label>CNH:</label><input type="file"/><br/>
+              <label>Comprovante de Residência:</label><input type="file"/><br/>
+              <label>Documento do Veículo:</label><input type="file"/><br/>
+              <label>Cópia da Multa:</label><input type="file"/><br/>
+              <label>Comprovante de pagamento da taxa p/ recurso :</label><input type="file"/><br/>
+              <label>Procuração (Se processo for feito por procurador):</label><input type="file"/><br/>
+              <label>Outros Documentos:</label><input type="file"/><br/>
+              <label>Razões do Recurso:</label><textarea></textarea><br/>
               <input type="submit" class="btn btn-primary">
             </div>
           </form>

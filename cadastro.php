@@ -7,7 +7,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </head>
   <body>
-
     <div class="container_form col-6 mt-4">
       <form enctype="multipart/form-data" method="post" action="adiciona-usuario.php"  name="cadastro" class="form_cad">
         <fieldset>
@@ -15,15 +14,15 @@
           <div class="form-group align-self-center">
             <div class="">
               <label>Nome:</label>
-              <input type="text" name="nome" class="form-control">
+              <input type="text" name="nome_cad" class="form-control">
             </div>
             <div class="">
               <label>RG:</label>
-              <input type="text" name="rg" class="form-control">
+              <input type="text" name="rg_cad" class="form-control">
             </div>
             <div class="">
               <label>CPF:</label>
-              <input type="text" name="cpf" class="form-control">
+              <input type="text" name="cpf_cad" class="form-control">
             </div>
             <div class="">
               <label>Identidade:</label>
