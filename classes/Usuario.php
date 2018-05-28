@@ -3,32 +3,28 @@
 require_once 'classes/Conexao.php';
 
 class Usuario {
-	public $id;
-	public $nome;
-	public $rg;
-	public $cpf;
-	public $endereco;
-	public $senha;
-	public $email;
-	public $identidade_arquivo;
-	public $endereco_arquivo;
-	public $selfie_arquivo;
+	protected $id;
+	protected $nome;
+	protected $rg;
+	protected $cpf;
+	protected $endereco;
+	protected $senha;
+	protected $email;
+	protected $identidade_arquivo;
+	protected $endereco_arquivo;
+	protected $selfie_arquivo;
 
-	/*public function setSenha($senha) {
+	public function __construct($nome, $rg, $cpf, $endereco, $senha, $email, $identidade_arquivo, $endereco_arquivo, $selfie_arquivo) {
+		$this->nome = $nome;
+		$this->rg = $rg;
+		$this->cpf = $cpf;
+		$this->endereco = $endereco;
 		$this->senha = $senha;
-	}
-
-	public function getSenha() {
-		return $this->senha;
-	}
-
-	public function setEmail($email) {
 		$this->email = $email;
+		$this->identidade_arquivo = $identidade_arquivo;
+		$this->endereco_arquivo = $endereco_arquivo;
+		$this->selfie_arquivo = $selfie_arquivo;
 	}
-
-	public function getEmail() {
-		return $this->email;
-	}*/
 
     public function inserir()
     {
