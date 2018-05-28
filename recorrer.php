@@ -30,8 +30,8 @@
               <input type="text" name="cnh">
             </div>
             <div>
-              <label>Recurso Próprio:</label><input type="radio" name="procurador" value="falso">
-              <label>Procurador:</label><input type="radio" name="procurador" value="true">
+              <label>Recurso Próprio:</label><input type="radio" name="procurador" value="nao">
+              <label>Procurador:</label><input type="radio" name="procurador" value="sim">
             </div>
             <div>
               <h6>Documentos Obrigatórios</h6>

@@ -15,3 +15,4 @@ $recurso = new Recurso();
 $recurso->autoDeInfracao = $_POST['numero_infracao'];
 $recurso->usuario = $usuario;
 $recurso->cnh = $_POST['cnh'];
+$recurso->cnhArquivo = 
