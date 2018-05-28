@@ -8,12 +8,9 @@ error_reporting(E_ALL);
 
 $email = 'div@email.com';
 
-$usuario = new Usuario()
-
-$usuario->carregar($email);
+$usuario = new Usuario($email);
 
 //var_dump($usuario);
 
 echo $usuario->email;
-echo '<br>';
 echo $usuario->senha;
