@@ -26,19 +26,19 @@
               <input type="text" name="numero_infracao">
             </div>
             <div>
-              <label>Recurso Próprio:</label><input type="radio">
-              <label>Procurador:</label><input type="radio">
+              <label>Recurso Próprio:</label><input type="radio" name="procurador" value="falso">
+              <label>Procurador:</label><input type="radio" name="procurador" value="true">
             </div>
             <div>
               <h6>Documentos Obrigatórios</h6>
-              <label>CNH:</label><input type="file"/><br/>
-              <label>Comprovante de Residência:</label><input type="file"/><br/>
-              <label>Documento do Veículo:</label><input type="file"/><br/>
-              <label>Cópia da Multa:</label><input type="file"/><br/>
-              <label>Comprovante de pagamento da taxa p/ recurso :</label><input type="file"/><br/>
-              <label>Procuração (Se processo for feito por procurador):</label><input type="file"/><br/>
-              <label>Outros Documentos:</label><input type="file"/><br/>
-              <label>Razões do Recurso:</label><textarea></textarea><br/>
+              <label>CNH:</label><input type="file" name="cnh_arquivo" /><br/>
+              <label>Comprovante de Residência:</label><input type="file" name="comprovante_residencia" /><br/>
+              <label>Documento do Veículo:</label><input type="file" name="documento_veiculo" /><br/>
+              <label>Cópia da Multa:</label><input type="file" name="multa_arquivo" /><br/>
+              <label>Comprovante de pagamento da taxa p/ recurso :</label><input type="file" name="comprovante" /><br/>
+              <label>Procuração (Se processo for feito por procurador):</label><input type="file" name="procuracao" /><br/>
+              <label>Outros Documentos:</label><input type="file" name="outros_documentos" /><br/>
+              <label>Razões do Recurso:</label><textarea name="razoes"></textarea><br/>
               <input type="submit" class="btn btn-primary">
             </div>
           </form>

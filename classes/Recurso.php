@@ -13,5 +13,6 @@ class Recurso {
 	public $comprovanteTaxaArquivo;
 	public $procuraoArquivo;
 	public $outrosDocumentos;
+	public $razoes;
 
 }
