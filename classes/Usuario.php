@@ -62,16 +62,5 @@ class Usuario {
         $inserir->execute();
         return $inserir;
     }
-	public function carregar($email) 
-	{
-        $conexao = Conexao::pegarConexao();
-        $query = "SELECT email, senha FROM usuarios where email = '".$this->email."'";
-        $resultado = $conexao->query($query);
-        $lista = $resultado->fetchAll();
-        foreach ($lista as $linha) {
-            $this->senha = $linha['senha'];
-            $this->email = $linha['email'];
-        }
-	}
 
 }
