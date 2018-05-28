@@ -1,8 +1,23 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
 .container {
     display: flex;
     justify-content: center;
 }
 .formulario__login {
-    width: 50%;
+    width: 45%;
     margin: 30vh;
+    background-color: #5F7C8A;
+    padding: 30px;
+    border-radius: 3px;
 }
+.formulario__link-cadastro {
+    font-size: 0.938em;
+    text-decoration: none !important;
+}
+input:focus {
+    outline: none;
+}
+
