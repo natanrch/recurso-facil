@@ -13,25 +13,30 @@ $nomeTempIdentidade = $arquivoIdentidade['tmp_name'];
 move_uploaded_file($nomeTempIdentidade, 'imagens/'.$nomeIdentidade);
 
 //trata arquivo endereço
-$arquivoEndereco = $_FILES['endereco'];
+$arquivoEndereco = $_FILES['comprovante_residencia'];
 $nomeEndereco = $arquivoEndereco['name'];
-$nomeTempEndereco = $arquivoIdentidade['tmp_name'];
-move_uploaded_file($nomeEndereco, 'imagens/'.$nomeEndereco);
+$nomeTempEndereco = $arquivoEndereco['tmp_name'];
+move_uploaded_file($nomeTempEndereco, 'imagens/'.$nomeEndereco);
 
 //trata arquivo selfie
-$arquivoSelfie = $_FILES['selfie'];
+$arquivoSelfie = $_FILES['selfie_identidade'];
 $nomeSelfie = $arquivoSelfie['name'];
 $nomeTempSelfie = $arquivoSelfie['tmp_name'];
 move_uploaded_file($nomeTempSelfie, 'imagens/'.$nomeSelfie);
 
 $usuario = new Usuario();
 
-$usario->nome = $_POST['nome'];
-$usario->rg = $_POST['rg'];
-$usario->cpf = $_POST['cpf'];
-$usario->endereco = $_POST['endereco'];
-$usario->senha = $_POST['senha'];
-$usario->email = $_POST['email'];
-$usario->identidade_arquivo = $nomeIdentidade;
-$usario->endereco_arquivo = $nomeEndereco;
-$usario->selfie_arquivo = $nomeSelfie;
+$usuario->id = 1;
+$usuario->nome = $_POST['nome'];
+$usuario->rg = $_POST['rg'];
+$usuario->cpf = $_POST['cpf'];
+$usuario->endereco = $_POST['endereco'];
+$usuario->senha = $_POST['senha'];
+$usuario->email = "meu pau";
+$usuario->identidade_arquivo = $nomeIdentidade;
+$usuario->endereco_arquivo = $nomeEndereco;
+$usuario->selfie_arquivo = $nomeSelfie;
+
+var_dump($usuario);
+
+$usuario->inserir();
