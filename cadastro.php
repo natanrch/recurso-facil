@@ -30,6 +30,10 @@
               <input type="file" name="identidade" class="">
             </div>
             <div class="">
+              <label>Selfie com identidade:</label>
+              <input type="file" name="selfie_identidade" class="">
+            </div>
+            <div class="">
               <label>Endereço:</label>
               <input type="text" name="endereco" class="form-control">
             </div>
@@ -38,8 +42,8 @@
               <input type="file" name="comprovante_residencia" class="">
             </div>
             <div class="">
-              <label>Selfie com identidade:</label>
-              <input type="file" name="selfie_identidade" class="">
+              <label>E-mail:</label>
+              <input type="email" name="email" class="">
             </div>
             <div class="">
               <label>Senha:</label>

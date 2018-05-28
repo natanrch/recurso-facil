@@ -26,7 +26,6 @@ move_uploaded_file($nomeTempSelfie, 'imagens/'.$nomeSelfie);
 
 $usuario = new Usuario();
 
-$usuario->id = 1;
 $usuario->nome = $_POST['nome'];
 $usuario->rg = $_POST['rg'];
 $usuario->cpf = $_POST['cpf'];
