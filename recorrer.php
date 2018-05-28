@@ -20,7 +20,7 @@
             </ul>
         </div>
         <div class="col direito">
-          <form>
+          <form action="adiciona-recurso.php" method="post" enctype="multipart/form-data">
             <div>
               <label>Número do auto de infração:</label>
               <input type="text" name="numero_infracao">
