@@ -1,21 +1,22 @@
 <?php
 
-require_once 'classes/Usuario.php';
+require_once 'classes/Conexao.php';
 
-class Recurso {
+class Recurso
+{
 	public $id;
 	public $autoDeInfracao;
 	public $usuario;
 	public $cnh;
 	public $cnhArquivo;
 	public $enderecoArquivo;
-	public $documentoArquivo
+	public $documentoArquivo;
 	public $multaArquivo;
 	public $comprovanteTaxaArquivo;
 	public $procuracaoArquivo;
 	public $outrosDocumentos;
 	public $razoes;
-
+/*
 	public function inserir()
 	{
 		$conexao = Conexao::pegarConexao();
@@ -31,7 +32,35 @@ class Recurso {
 		$inserir->bindValue(":PROCURACAO_ARQUIVO", $this->procuracaoArquivo, PDO::PARAM_STR);
 		$inserir->bindValue(":OUTROS_DOCUMENTOS", $this->outrosDocumentos, PDO::PARAM_STR);
 		$inserir->bindValue(":RAZOES", $this->razoes, PDO::PARAM_STR);
+		return $inserir;
+
+	}*/
+	public function inserir()
+	{
+		$query = "INSERT INTO recursos (auto_de_infracao, usuario_id, cnh, cnh_arquivo, veiculo_arquivo, endereco_arquivo, multa_arquivo, comprovante_taxa_arquivo, procuracao_arquivo, outros_documentos, razoes) VALUES
+		(
+		{$this->autoDeInfracao}, 
+		{$this->usuario}, 
+		{$this->cnh}, 
+		'".$this->cnhArquivo."', 
+		'".$this->documentoArquivo."', 
+		'".$this->enderecoArquivo."', 
+		'".$this->multaArquivo."', 
+		'".$this->comprovanteTaxaArquivo."', 
+		'".$this->procuracaoArquivo."', 
+		'".$this->outrosDocumentos."', 
+		'".$this->razoes."'
+		)";
+        $conexao = Conexao::pegarConexao();
+        $conexao->exec($query);
 
 	}
-
+	    public function listar()
+    {
+        $query = "SELECT id, auto_de_infracao FROM recursos";
+        $conexao = Conexao::pegarConexao();
+        $resultado = $conexao->query($query);
+        $lista = $resultado->fetchAll();
+        return $lista;
+    }
 }

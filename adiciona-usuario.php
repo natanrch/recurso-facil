@@ -48,3 +48,4 @@ $usuario->selfie_arquivo = $nomeSelfie;
 var_dump($usuario);
 
 $usuario->inserir();
+header("Location: user.php");
