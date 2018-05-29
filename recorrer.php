@@ -1,3 +1,10 @@
+<?php
+
+if(!$_SESSION['email']) {
+  header("Location: login.php");
+};
+?>
+
 <html>
   <head>
     <title>Area do usuário</title>
