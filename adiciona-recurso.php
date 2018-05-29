@@ -7,7 +7,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$email = 'algumacoisa'; //esse e-mail vai ser identificado após analisar o Session
+$email = 'div@email.com'; //esse e-mail vai ser identificado após analisar o Session
 $usuario = new Usuario($email);
 
 //trata arquivo cnh
@@ -55,7 +55,7 @@ move_uploaded_file($nomeTempOutros, 'imagens/'.$nomeOutros);
 $recurso = new Recurso();
 
 $recurso->autoDeInfracao = $_POST['numero_infracao'];
-$recurso->usuario = $usuario;
+$recurso->usuario = $usuario->id;
 $recurso->cnh = $_POST['cnh'];
 $recurso->cnhArquivo = $nomeCnh;
 $recurso->enderecoArquivo = $nomeResidencia;
