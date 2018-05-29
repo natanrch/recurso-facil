@@ -1,8 +1,8 @@
 <?php
 
-if(!$_SESSION['email']) {
-  header("Location: login.php");
-};
+//require_once 'logica-login.php';
+//verificaLogin();
+
 ?>
 
 <html>

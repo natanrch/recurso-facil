@@ -1,6 +1,9 @@
 <?php 
 
 	require_once 'logica-login.php';
+	if(isset($_SESSION['email'])) {
+		redireciona();
+	}
  ?>
 
  <!DOCTYPE html>

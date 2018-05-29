@@ -18,9 +18,19 @@ if(isset($_POST['email']) && isset($_POST['senha'])){
 		if($linhasAfetadas > 0 && $senha == $senhaUsuario ){	
 			$_SESSION['email'] = $email;
 			$_SESSION['senha'] = $senha;
-			header("Location: index.php");
+			//header("Location: index.php");
 		}else {
 			header("Location: login.php");
 		}
-	}	
+	}
+
+	function redireciona() {
+		header("Location: user.php");
+	}
+
+	function verificaLogin() {
+		if(!isset($_SESSION['email'])) {
+			header("Location: login.php");
+		}
+	}
 }
