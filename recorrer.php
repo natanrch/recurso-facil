@@ -24,12 +24,14 @@
             </ul>
         </div>
         <div class="col direito">
-          <form class="">
-            <div class="">
           <form enctype="multipart/form-data" method="post" action="adiciona-recurso.php" >
             <div>
               <label>Número do auto de infração:</label>
               <input type="text" name="numero_infracao">
+            </div>
+            <div>
+              <label>Número da CNH:</label>
+              <input type="text" name="cnh">
             </div>
             <div>
               <label>Recurso Próprio:</label><input type="radio">
