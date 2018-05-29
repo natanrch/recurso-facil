@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 if(isset($_POST['email']) && isset($_POST['senha'])){
 
@@ -25,10 +25,8 @@ if(isset($_POST['email']) && isset($_POST['senha'])){
 		}
 	}
 }
-=======
+?>
 <?php 
->>>>>>> 0699f894a22e9dd30f7de686b782afbd91041aa8
-
 	require_once 'logica-login.php';
 	if(isset($_SESSION['email'])) {
 		redireciona();
