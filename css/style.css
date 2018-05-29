@@ -1,6 +1,7 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 .container {
     display: flex;
@@ -30,4 +31,64 @@ input:focus {
   border:1px solid rgba(0,0,0,.3);
   border-radius:5px;
 }
-
+.esquerdo{
+  width:15%;
+  background-color:rgb(57, 57, 57);
+  /* border:1px solid #fff; */
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  /* height:100px; */
+  height:700px;
+}
+.esquerdo ul{
+  /* border:1px solid red; */
+}
+.esquerdo li{
+  border-top:1px solid #fff;
+  list-style:none;
+  text-align:center;
+  height:45px;
+  padding-top:9px;
+}
+.recorrer{
+  box-shadow:0 0 5px #000;
+  border-radius:5px;
+  position:relative;
+}
+.recorrer p{
+  position:absolute;
+  bottom:0;
+  left:0;
+  border-top:1px solid rgb(171, 171, 171);
+  width:100%;
+  text-align:center;
+}
+.recorrer img{
+  width:100%;
+}
+.acompanhar{
+  box-shadow:0 0 5px #000;
+  border-radius:5px;
+  position:relative;
+}
+.acompanhar p{
+  position:absolute;
+  bottom:0;
+  left:0;
+  border-top:1px solid rgb(171, 171, 171);
+  width:100%;
+  text-align:center;
+}
+.op{
+  margin-top:200px;
+  height:300px;
+}
+.esquerdo a{
+  color:#fff;
+}
+.direito{
+  background-color:rgb(221, 221, 221);
+  /* border:1px solid #fff; */
+}
+/*================================*/
