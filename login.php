@@ -10,21 +10,15 @@ if(isset($_POST['email']) && isset($_POST['senha'])){
 	if(empty($email) || empty($senha)){
 		echo "Preencha todos os campos";
 	}else{
-		if($linhasAfetadas > 0 && $senha == $senhaUsuario ){
+		if($linhasAfetadas > 0 && $senha == $senhaUsuario ){	
 			$_SESSION['email'] = $email;
 			$_SESSION['senha'] = $senha;
 			header("Location: index.php");
 		}else {
 			header("Location: login.php");
 		}
-	}
-	
-
-	
-
-
+	}	
 }
-
 
  ?>
 
