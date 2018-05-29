@@ -1,10 +1,9 @@
-
 <?php 
 
 
 	require_once 'logica-login.php';
 
- ?>
+?>
 
  <!DOCTYPE html>
  <html>

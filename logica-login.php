@@ -24,13 +24,13 @@ if(isset($_POST['email']) && isset($_POST['senha'])){
 		}
 	}
 
-	function redireciona() {
-		header("Location: user.php");
-	}
+}
+function redireciona() {
+	header("Location: user.php");
+}
 
-	function verificaLogin() {
-		if(!isset($_SESSION['email'])) {
-			header("Location: login.php");
-		}
+function verificaLogin() {
+	if(!isset($_SESSION['email'])) {
+		header("Location: login.php");
 	}
 }
