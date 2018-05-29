@@ -71,4 +71,4 @@ $recurso->razoes = $_POST['razoes'];
 var_dump($recurso);
 
 $resultado = $recurso->inserir();
-var_dump($resultado);
+header("Location: user.php");
