@@ -39,9 +39,9 @@ class Recurso
 	{
 		$query = "INSERT INTO recursos (auto_de_infracao, usuario_id, cnh, cnh_arquivo, veiculo_arquivo, endereco_arquivo, multa_arquivo, comprovante_taxa_arquivo, procuracao_arquivo, outros_documentos, razoes) VALUES
 		(
-		{$this->autoDeInfracao}, 
+		'".$this->autoDeInfracao."', 
 		{$this->usuario}, 
-		{$this->cnh}, 
+		'".$this->cnh."', 
 		'".$this->cnhArquivo."', 
 		'".$this->documentoArquivo."', 
 		'".$this->enderecoArquivo."', 
@@ -65,12 +65,15 @@ class Recurso
         return $lista;
     }
 
-    public function mostraDetalhes($id)
+    public function mostraDetalhes()
     {
-    	$query = "SELECT * FROM recursos where id = ".$id;
         $conexao = Conexao::pegarConexao();
+    	$query = "SELECT * FROM recursos where id = ".$this->id;
         $resultado = $conexao->query($query);
-        $lista = $resulado->fetchAll();
-        return $lista;
+        $lista = $resultado->fetchAll();
+        foreach ($lista as $linha) {
+            $this->id = $linha['id'];
+        }
+
     }
 }

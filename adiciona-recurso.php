@@ -1,5 +1,7 @@
 <?php
 
+echo exec('whoami');
+
 require_once 'classes/Usuario.php';
 require_once 'classes/Recurso.php';
 
@@ -9,9 +11,7 @@ error_reporting(E_ALL);
 
 echo 'página funciona';
 
-session_start();
-
-$email = $_SESSION['email'];
+$email = 'div@email.com';
 $usuario = new Usuario($email);
 
 //trata arquivo cnh
@@ -73,4 +73,4 @@ $recurso->razoes = $_POST['razoes'];
 var_dump($recurso);
 
 $resultado = $recurso->inserir();
-header("Location: user.php");
+//header("Location: user.php");
