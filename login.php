@@ -60,7 +60,7 @@ if(isset($_POST['email_login']) && isset($_POST['senha_login'])){
 					<div class="input-group-prepend">
 						<div class="input-group-text"><i class="fas fa-key"></i></div>
 					</div>
-       				<input type="password" class="form-control" id="senha" placeholder="Senha" name="senha">
+       				<input type="password" class="form-control" id="senha" placeholder="Senha" name="senha_login">
       			</div>
 			</div>
 			<a href="cadastro.php" class="col-auto text-white formulario__link-cadastro">Cadastre-se</a>
