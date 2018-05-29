@@ -35,6 +35,13 @@ class Recurso
 		return $inserir;
 
 	}*/
+	public function __construct($id = false) {
+		if ($id) {
+			$this->id = $id;
+			$this->carregar();
+		}
+	}
+
 	public function inserir()
 	{
 		$query = "INSERT INTO recursos (auto_de_infracao, usuario_id, cnh, cnh_arquivo, veiculo_arquivo, endereco_arquivo, multa_arquivo, comprovante_taxa_arquivo, procuracao_arquivo, outros_documentos, razoes) VALUES
@@ -65,7 +72,7 @@ class Recurso
         return $lista;
     }
 
-    public function mostraDetalhes()
+    public function carregar()
     {
         $conexao = Conexao::pegarConexao();
     	$query = "SELECT * FROM recursos where id = ".$this->id;
@@ -73,6 +80,17 @@ class Recurso
         $lista = $resultado->fetchAll();
         foreach ($lista as $linha) {
             $this->id = $linha['id'];
+            $this->autoDeInfracao = $linha['auto_de_infracao'];
+            $this->usuario = $linha['usuario_id'];
+            $this->cnh = $linha['cnh'];
+            $this->cnhArquivo = $linha['cnh_arquivo'];
+            $this->documentoArquivo = $linha['veiculo_arquivo'];
+            $this->enderecoArquivo = $linha['endereco_arquivo'];
+            $this->multaArquivo = $linha['multa_arquivo'];
+            $this->comprovanteTaxaArquivo = $linha['comprovante_taxa_arquivo'];
+            $this->procuracaoArquivo = $linha['procuracao_arquivo'];
+            $this->outrosDocumentos = $linha['outros_documentos'];
+            $this->razoes = $linha['razoes'];
         }
 
     }

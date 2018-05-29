@@ -8,6 +8,10 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$recurso = new Recurso();
+$id = 1;
 
-$recurso->id = 1;
+$recurso = new Recurso($id);
+
+
+$usuario = new Usuario('div@email.com');
+var_dump($recurso);
