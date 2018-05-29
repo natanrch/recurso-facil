@@ -11,7 +11,7 @@ error_reporting(E_ALL);
 $id = 1;
 
 $recurso = new Recurso($id);
-
-
-$usuario = new Usuario('div@email.com');
 var_dump($recurso);
+
+
+//$usuario = new Usuario('div@email.com');
