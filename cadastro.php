@@ -14,15 +14,15 @@
           <div class="form-group align-self-center">
             <div class="">
               <label>Nome:</label>
-              <input type="text" name="nome_cad" class="form-control">
+              <input type="text" name="nome" class="form-control">
             </div>
             <div class="">
               <label>RG:</label>
-              <input type="text" name="rg_cad" class="form-control">
+              <input type="text" name="rg" class="form-control">
             </div>
             <div class="">
               <label>CPF:</label>
-              <input type="text" name="cpf_cad" class="form-control">
+              <input type="text" name="cpf" class="form-control">
             </div>
             <div class="">
               <label>Identidade:</label>
