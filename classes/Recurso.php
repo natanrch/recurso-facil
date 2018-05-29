@@ -55,4 +55,12 @@ class Recurso
         $conexao->exec($query);
 
 	}
+	    public function listar()
+    {
+        $query = "SELECT id, auto_de_infracao FROM recursos";
+        $conexao = Conexao::pegarConexao();
+        $resultado = $conexao->query($query);
+        $lista = $resultado->fetchAll();
+        return $lista;
+    }
 }

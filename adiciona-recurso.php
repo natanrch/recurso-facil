@@ -9,7 +9,9 @@ error_reporting(E_ALL);
 
 echo 'página funciona';
 
-$email = 'div@email.com'; //esse e-mail vai ser identificado após analisar o Session
+session_start();
+
+$email = $_SESSION['email'];
 $usuario = new Usuario($email);
 
 //trata arquivo cnh
@@ -71,4 +73,4 @@ $recurso->razoes = $_POST['razoes'];
 var_dump($recurso);
 
 $resultado = $recurso->inserir();
-var_dump($resultado);
+header("Location: user.php");
