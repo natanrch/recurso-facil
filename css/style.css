@@ -103,3 +103,8 @@ input:focus {
   font-size: 0.938em;
   text-align: center;
 }
+
+#icon-face, #icon-twi, #icon-insta {
+  font-size: 30px;
+  color:#228AE6;
+}
