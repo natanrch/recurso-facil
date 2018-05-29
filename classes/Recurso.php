@@ -67,10 +67,13 @@ class Recurso
 
     public function mostraDetalhes()
     {
-    	$query = "SELECT * FROM recursos where id = ".$this->id;
         $conexao = Conexao::pegarConexao();
+    	$query = "SELECT * FROM recursos where id = ".$this->id;
         $resultado = $conexao->query($query);
-        $lista = $resulado->fetchAll();
-        return $lista;
+        $lista = $resultado->fetchAll();
+        foreach ($lista as $linha) {
+            $this->id = $linha['id'];
+        }
+
     }
 }
