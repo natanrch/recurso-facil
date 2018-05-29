@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 30, 2018 at 09:04 AM
+-- Generation Time: May 30, 2018 at 11:33 AM
 -- Server version: 5.7.22-0ubuntu0.16.04.1
 -- PHP Version: 7.1.17-1+ubuntu16.04.1+deb.sury.org+1
 
@@ -32,6 +32,14 @@ CREATE TABLE `julgamentos` (
   `recurso_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `julgamentos`
+--
+
+INSERT INTO `julgamentos` (`id`, `resposta`, `recurso_id`) VALUES
+(1, 'Indefiro seu recurso. Pague a multa.', 1),
+(2, 'Indefiro seu recurso. Pague a multa.', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -58,10 +66,10 @@ CREATE TABLE `recursos` (
 --
 
 INSERT INTO `recursos` (`id`, `auto_de_infracao`, `usuario_id`, `cnh`, `cnh_arquivo`, `veiculo_arquivo`, `endereco_arquivo`, `multa_arquivo`, `comprovante_taxa_arquivo`, `procuracao_arquivo`, `outros_documentos`, `razoes`) VALUES
-(1, '798789', 4, '454', 'movieposter.jpg', 'maurilio-cinema.jpg', '20170908_095719-iloveimg-cropped.jpg', 'cadastro-editado.jpg', 'Natanrch.jpg', 'movieposter.jpg', 'obama.jpg', 'fgsgjhauigha\r\n'),
-(2, '798416565', 4, '4487845', 'movieposter.jpg', 'maurilio-cinema.jpg', '20170908_095719-iloveimg-cropped.jpg', 'cadastro-editado.jpg', 'Natanrch.jpg', 'movieposter.jpg', 'obama.jpg', 'fhsfhjijnaga'),
-(3, '12345566', 4, '252252', 'site-casa-do-criador-3.jpg', 'Captura de tela de 2018-03-26 14-49-34.png', 'site-casa-do-criador1.jpg', 'starman.jpg', 'NÃºmero da sorte.png', '20170908_095719-iloveimg-cropped-iloveimg-resized.jpg', 'Captura de tela de 2017-12-01 11-32-20.png', 'DFJHASFJKSHFKJAH'),
-(4, 'fafa', 4, 'fsdfs', 'site-casa-do-criador-3.jpg', 'Captura de tela de 2018-05-11 18-39-06.png', 'site-casa-do-criador1.jpg', 'Natanrch.jpg', 'squirtle-skol.jpeg', '20170908_095719-iloveimg-cropped.jpg', 'Captura de tela de 2018-03-26 14-49-34.png', 'dfasfafa');
+(1, '798789', 4, '454', 'movieposter.jpg', 'maurilio-cinema.jpg', '20170908_095719-iloveimg-cropped.jpg', 'cadastro-editado.jpg', 'Natanrch.jpg', 'movieposter.jpg', 'obama.jpg', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
+(2, '798416565', 4, '4487845', 'movieposter.jpg', 'maurilio-cinema.jpg', '20170908_095719-iloveimg-cropped.jpg', 'cadastro-editado.jpg', 'Natanrch.jpg', 'movieposter.jpg', 'obama.jpg', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
+(3, '12345566', 4, '252252', 'site-casa-do-criador-3.jpg', 'Captura de tela de 2018-03-26 14-49-34.png', 'site-casa-do-criador1.jpg', 'starman.jpg', 'NÃºmero da sorte.png', '20170908_095719-iloveimg-cropped-iloveimg-resized.jpg', 'Captura de tela de 2017-12-01 11-32-20.png', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
+(4, 'fafa', 4, 'fsdfs', 'site-casa-do-criador-3.jpg', 'Captura de tela de 2018-05-11 18-39-06.png', 'site-casa-do-criador1.jpg', 'Natanrch.jpg', 'squirtle-skol.jpeg', '20170908_095719-iloveimg-cropped.jpg', 'Captura de tela de 2018-03-26 14-49-34.png', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
 
 -- --------------------------------------------------------
 
@@ -77,9 +85,9 @@ CREATE TABLE `usuarios` (
   `endereco` varchar(60) NOT NULL,
   `senha` varchar(60) NOT NULL,
   `email` varchar(60) NOT NULL,
-  `identidade_arquivo` mediumblob NOT NULL,
-  `endereco_arquivo` mediumblob NOT NULL,
-  `selfie_arquivo` mediumblob NOT NULL
+  `identidade_arquivo` varchar(100) NOT NULL,
+  `endereco_arquivo` varchar(100) NOT NULL,
+  `selfie_arquivo` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -87,13 +95,13 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `rg`, `cpf`, `endereco`, `senha`, `email`, `identidade_arquivo`, `endereco_arquivo`, `selfie_arquivo`) VALUES
-(1, 'Natan', '388092', '91586160206', 'avenida vinte e seis de julho 123', 'meupau', 'meu pau', 0x32303137303930365f3135343035372e6a7067, 0x32303137303930365f3135343035372832292e6a7067, 0x32303137303930365f3135343035372831292e6a7067),
-(2, 'Natan', '388092', '91586160206', 'avenida vinte e seis de julho 123', '02062006', 'meu pau', 0x32303137303930365f3135343035372e6a7067, '', ''),
-(4, 'Brenno', '798784', '4545', 'meu endereco', 'eduardo', 'div@email.com', 0x6d617572696c696f2d63696e656d612e6a7067, 0x63696e65706f6c69732e706e67, 0x33303732373339395f313633323530323235363833303636315f333539323138303131333732383333393936385f6e2e6a7067),
-(5, 'Eduardo', '7878', '456488748', 'santan', 'meupau', 'dudud@gmail.com', 0x436170747572612064652074656c6120646520323031382d30342d31382031352d34392d30322e706e67, 0x436170747572612064652074656c6120646520323031372d31322d30312031312d33322d32302e706e67, 0x6d6f6f646c652032382e30322e706e67),
-(6, 'Adrielly', '798416', '46516498', 'universidade', '1234', 'adriely@email.com', 0x436170747572612064652074656c6120646520323031382d30352d31312031382d33392d30362e706e67, 0x436170747572612064652074656c6120646520323031382d30332d33302031342d35352d35332e706e67, 0x436170747572612064652074656c6120646520323031382d30332d33302031342d35352d35332e706e67),
-(7, 'Eduardo henrique', '5743856378', '79845649', 'santana sÃ³ buraco', '1234', 'blabla@dudu.com', 0x32323835313738315f313436393633373435393735323835305f333837333531353135393836393530323937315f6e2e6a7067, 0x6d6f6f646c652032382e30322e706e67, 0x32303137303930385f3039353731392d696c6f7665696d672d63726f707065642d696c6f7665696d672d726573697a65642e6a7067),
-(8, 'Natan', '111', '22233344455', 'qualquer um', 'meupauteama', 'natan.rocha.batista@gmail.com', 0x33303732373339395f313633323530323235363833303636315f333539323138303131333732383333393936385f6e2e6a7067, 0x436170747572612064652074656c6120646520323031382d30332d32372031342d34312d34362e706e67, 0x436170747572612064652074656c6120646520323031382d30332d32362031342d34392d33342e706e67);
+(1, 'Natan', '388092', '91586160206', 'avenida vinte e seis de julho 123', 'meupau', 'meu pau', '20170906_154057.jpg', '20170906_154057(2).jpg', '20170906_154057(1).jpg'),
+(2, 'Natan', '388092', '91586160206', 'avenida vinte e seis de julho 123', '02062006', 'meu pau', '20170906_154057.jpg', '', ''),
+(4, 'Andre Luis', '798784', '4545', 'meu endereco', 'eduardo', 'div@email.com', 'maurilio-cinema.jpg', 'cinepolis.png', '30727399_1632502256830661_3592180113728339968_n.jpg'),
+(5, 'Eduardo', '7878', '456488748', 'santan', 'meupau', 'dudud@gmail.com', 'Captura de tela de 2018-04-18 15-49-02.png', 'Captura de tela de 2017-12-01 11-32-20.png', 'moodle 28.02.png'),
+(6, 'Adrielly', '798416', '46516498', 'universidade', '1234', 'adriely@email.com', 'Captura de tela de 2018-05-11 18-39-06.png', 'Captura de tela de 2018-03-30 14-55-53.png', 'Captura de tela de 2018-03-30 14-55-53.png'),
+(7, 'Eduardo henrique', '5743856378', '79845649', 'santana sÃ³ buraco', '1234', 'blabla@dudu.com', '22851781_1469637459752850_3873515159869502971_n.jpg', 'moodle 28.02.png', '20170908_095719-iloveimg-cropped-iloveimg-resized.jpg'),
+(8, 'Natan', '111', '22233344455', 'qualquer um', 'meupauteama', 'natan.rocha.batista@gmail.com', '30727399_1632502256830661_3592180113728339968_n.jpg', 'Captura de tela de 2018-03-27 14-41-46.png', 'Captura de tela de 2018-03-26 14-49-34.png');
 
 --
 -- Indexes for dumped tables
@@ -127,7 +135,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT for table `julgamentos`
 --
 ALTER TABLE `julgamentos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `recursos`
 --
