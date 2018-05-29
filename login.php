@@ -1,10 +1,24 @@
 <?php 
 if(isset($_POST['email']) && isset($_POST['senha'])){
-	$usuario = $_POST['email'];
+	require 'classes/Usuario.php';
+	session_start();
+	$email = $_POST['email'];
 	$senha = $_POST['senha'];
-
+	$usuario = new Usuario($email);
+	$senhaUsuario = $usuario->senha;
+	$linhasAfetadas = $usuario->linhaDados;
+	if(empty($email) || empty($senha)){
+		echo "Preencha todos os campos";
+	}else{
+		if($linhasAfetadas > 0 && $senha == $senhaUsuario ){	
+			$_SESSION['email'] = $email;
+			$_SESSION['senha'] = $senha;
+			header("Location: index.php");
+		}else {
+			header("Location: login.php");
+		}
+	}	
 }
-
 
  ?>
 
@@ -37,7 +51,7 @@ if(isset($_POST['email']) && isset($_POST['senha'])){
         		<div class="input-group-prepend">
           			<div class="input-group-text"><i class="fas fa-key"></i></div>
         		</div>
-       				<input type="text" class="form-control" id="senha" placeholder="Senha" name="senha">
+       				<input type="password" class="form-control" id="senha" placeholder="Senha" name="senha">
       			</div>
 			</div>
 				<a href="cadastro.php" class="col-auto text-white formulario__link-cadastro">Cadastre-se</a>
