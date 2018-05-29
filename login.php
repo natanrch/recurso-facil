@@ -1,11 +1,12 @@
 <?php
-if(isset($_POST['email']) && isset($_POST['senha'])){
+
+if(isset($_POST['email_login']) && isset($_POST['senha_login'])){
 
 	require 'classes/Usuario.php';
 	session_start();
 
-	$email = $_POST['email'];
-	$senha = $_POST['senha'];
+	$email = $_POST['email_login'];
+	$senha = $_POST['senha_login'];
 	$usuario = new Usuario($email);
 	$senhaUsuario = $usuario->senha;
 	$linhasAfetadas = $usuario->linhaDados;
@@ -24,14 +25,8 @@ if(isset($_POST['email']) && isset($_POST['senha'])){
 		}
 	}
 }
-?>
-<?php 
-
-	require_once 'logica-login.php';
-
- ?>
-
- <!DOCTYPE html>
+?> 
+<!DOCTYPE html>
  <html>
  <head>
  	<meta charset="utf-8">
