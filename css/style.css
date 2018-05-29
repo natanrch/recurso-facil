@@ -3,6 +3,9 @@
   padding:0;
   box-sizing:border-box;
 }
+body {
+  font-family: "Roboto",sans-serif;
+}
 .container {
     display: flex;
     justify-content: center;
@@ -92,3 +95,11 @@ input:focus {
   /* border:1px solid #fff; */
 }
 /*================================*/
+/* Validação basica d PHP */
+.valida_error {
+  padding: 5px;
+  font-weight: bold;
+  color: #212121;
+  font-size: 0.938em;
+  text-align: center;
+}
