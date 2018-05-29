@@ -1,8 +1,9 @@
-	<?php
+<?php
 
 require_once 'classes/Conexao.php';
 
-class Usuario {
+class Usuario
+{
 	public $id;
 	public $nome;
 	public $rg;

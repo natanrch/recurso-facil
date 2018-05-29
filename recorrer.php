@@ -20,7 +20,7 @@
             </ul>
         </div>
         <div class="col direito">
-          <form action="adiciona-recurso.php" method="post" enctype="multipart/form-data">
+          <form enctype="multipart/form-data" method="post" action="adiciona-recurso.php" >
             <div>
               <label>Número do auto de infração:</label>
               <input type="text" name="numero_infracao">
@@ -43,7 +43,7 @@
               <label>Procuração (Se processo for feito por procurador):</label><input type="file" name="procuracao" /><br/>
               <label>Outros Documentos:</label><input type="file" name="outros_documentos" /><br/>
               <label>Razões do Recurso:</label><textarea name="razoes"></textarea><br/>
-              <input type="submit" class="btn btn-primary">
+              <input type="submit" value="enviar" name="" class="btn btn-primary">
             </div>
           </form>
         </div>

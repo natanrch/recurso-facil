@@ -7,6 +7,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+echo 'página funciona';
+
 $email = 'div@email.com'; //esse e-mail vai ser identificado após analisar o Session
 $usuario = new Usuario($email);
 
@@ -32,7 +34,7 @@ move_uploaded_file($nomeTempDocumento, 'imagens/'.$nomeDocumento);
 $arquivoMulta = $_FILES['multa_arquivo'];
 $nomeMulta = $arquivoMulta['name'];
 $nomeTempMulta = $arquivoMulta['tmp_name'];
-move_uploaded_file($nomeTempMulta, 'imagens/'.$nomeMulta
+move_uploaded_file($nomeTempMulta, 'imagens/'.$nomeMulta);
 
 //trata arquivo comprovante de pagamento
 $arquivoComprovante = $_FILES['comprovante'];
@@ -57,7 +59,7 @@ $recurso = new Recurso();
 $recurso->autoDeInfracao = $_POST['numero_infracao'];
 $recurso->usuario = $usuario->id;
 $recurso->cnh = $_POST['cnh'];
-$recurso->cnhArquivo = $nomeCnh;
+$recurso->cnhArquivo = $nomeCNH;
 $recurso->enderecoArquivo = $nomeResidencia;
 $recurso->documentoArquivo = $nomeDocumento;
 $recurso->multaArquivo = $nomeMulta;
@@ -68,4 +70,5 @@ $recurso->razoes = $_POST['razoes'];
 
 var_dump($recurso);
 
-$recurso->inserir();
+$resultado = $recurso->inserir();
+var_dump($resultado);
