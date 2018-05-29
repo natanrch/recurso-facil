@@ -1,4 +1,4 @@
-<?php
+	<?php
 
 require_once 'classes/Conexao.php';
 
@@ -11,6 +11,7 @@ class Usuario {
 	public $senha;
 	public $email;
 	public $identidade_arquivo;
+	public $linhaDados;
 	public $endereco_arquivo;
 	public $selfie_arquivo;
 
@@ -43,7 +44,8 @@ class Usuario {
         foreach ($lista as $linha) {
             $this->senha = $linha['senha'];
             $this->email = $linha['email'];
-        }
+		}
+		$this->linhaDados = $resultado->rowCount();
 	}
 
     public function inserir()

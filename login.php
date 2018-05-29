@@ -4,12 +4,13 @@ if(isset($_POST['email']) && isset($_POST['senha'])){
 	session_start();
 	$email = $_POST['email'];
 	$senha = $_POST['senha'];
-	$pessoa = new Usuario($email);
-	$linhasAfetadas = $pessoa->linhaDados;
+	$usuario = new Usuario($email);
+	$senhaUsuario = $usuario->senha;
+	$linhasAfetadas = $usuario->linhaDados;
 	if(empty($email) || empty($senha)){
 		echo "Preencha todos os campos";
 	}else{
-		if($linhasAfetadas > 0){
+		if($linhasAfetadas > 0 && $senha == $senhaUsuario ){
 			$_SESSION['email'] = $email;
 			$_SESSION['senha'] = $senha;
 			header("Location: index.php");
