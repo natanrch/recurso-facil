@@ -17,7 +17,7 @@ if(isset($_POST['email']) && isset($_POST['senha'])){
 		if($linhasAfetadas > 0 && $senha == $senhaUsuario ){
 			$_SESSION['email'] = $email;
 			$_SESSION['senha'] = $senha;
-			header("Location: index.php");
+			header("Location: cabecalho.php");
 		}else {
 			$error = 1;
 			$msg = "Usuario ou senha errados";
