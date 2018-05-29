@@ -38,14 +38,18 @@ class Usuario {
 	public function carregar() 
 	{
         $conexao = Conexao::pegarConexao();
-        $query = "SELECT email, senha FROM usuarios where email = '".$this->email."'";
+        $query = "SELECT email, senha, id, nome FROM usuarios where email = '".$this->email."'";
         $resultado = $conexao->query($query);
         $lista = $resultado->fetchAll();
         foreach ($lista as $linha) {
             $this->senha = $linha['senha'];
             $this->email = $linha['email'];
-		}
+
+            $this->id = $linha['id'];
+            $this->nome = $linha['nome'];
+        }
 		$this->linhaDados = $resultado->rowCount();
+
 	}
 
     public function inserir()
