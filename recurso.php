@@ -55,8 +55,8 @@ $usuarioCarregado = $usuario->construirPorId($recurso->usuario);
 </table>
 <p class="border"><?= $recurso->razoes ?></p>
 
-<form method="post" action="adiciona-julgamento" class="form-control">
-	<label class="form-control" for="julgamento">Julgamento: </label>
+<form method="post" action="adiciona-julgamento">
+	<label  for="julgamento">Julgamento:</label>
 	<textarea class="form-control" name="julgamento"></textarea>
 </form>
 
