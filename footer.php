@@ -1,12 +1,12 @@
 <footer>
-        <nav class="bg-dark navbar fixed-bottom ">
+        <nav class="bg-dark navbar fixed-bottom p-0 ">
             <div class="container">
-                <div class="row justify-content-start">
-                    <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-4 mt-4">
                         <h4 class="text-center text-secondary">Sobre</h4>
-                        <p class="text-white">Lorem ipsum dolor sit tempore  itaque dolore error quis cum tempora unde doloribus.</p>
+                        <p class="text-white">Lorem ipsum dolor sit tempore  itaque dolore error itaque dolore error itaque dolore error quis cum tempora unde doloribus.</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mt-4">
                         <h4 class="text-center text-secondary">Informações</h4>
                         <ul class="nav justify-content-center">
                             <li class="nav-item"><a href="#" class="nav-link text-white">Recurso Facil</a>
@@ -14,7 +14,7 @@
                             <li class="nav-item"><a href="#" class="nav-link text-white">Contato</a>
                         </ul>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mt-4">
                         <h4 class="text-secondary text-center">Redes Sociais</h4>
                         <ul class="nav justify-content-center">
                             <li class="nav-item"><a href="#" class="nav-link text-white"><i class="fab fa-facebook" id="icon-face"></i></a>
