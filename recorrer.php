@@ -21,7 +21,7 @@ require_once 'logica-login.php';
               <li><a href="#">Item</a></li>
             </ul>
         </div>-->
-        <div class="col direito">
+        <div class="col direito ">
           <h2 class="text-center" style="margin-top:100px;">Formulário</h2>
           <h6 class="text-center">Preencha o formulário para recorrer sobre uma multa</h6>
           <form enctype="multipart/form-data" method="post" action="adiciona-recurso.php" class="formulario-recorrer">
