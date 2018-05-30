@@ -1,4 +1,8 @@
-<?php require_once 'header.php'; ?>
+<?php 
+require_once 'logica-login.php';
+verificaUsuario();
+require_once 'header.php'; 
+?>
     <div class="container-fluid user">
       <div class="row">
         <div class="esquerdo">
@@ -15,7 +19,7 @@
           <div class="row justify-content-around op">
             <div class="col-3 recorrer">
               <img src="img/recorrer.png">
-              <p>Recorrer</p>
+              <p><a href="recorrer.php">Recorrer</a></p>
             </div>
             <div class="col-3 acompanhar">
               <img src="img/acompanhar.png">
