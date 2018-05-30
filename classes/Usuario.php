@@ -36,6 +36,13 @@ class Usuario
 		}
 	}
 
+	public function construirPorId($id)
+	{
+        $instance = new self();
+        $instance->carregaPorId( $id );
+        return $instance;
+	}
+
 	public function carregar() 
 	{
         $conexao = Conexao::pegarConexao();
@@ -51,6 +58,18 @@ class Usuario
         }
 		$this->linhaDados = $resultado->rowCount();
 
+	}
+
+	public function carregaPorId($id)
+	{
+		$conexao = Conexao::pegarConexao();
+		$query = "SELECT nome from usuarios where id = ".$id;
+        $resultado = $conexao->query($query);
+        $lista = $resultado->fetchAll();
+        foreach ($lista as $linha) {
+
+            $this->nome = $linha['nome'];
+        }
 	}
 
     public function inserir()
