@@ -101,8 +101,8 @@ require_once 'logica-login.php';
                 <label>Razões do Recurso:</label>
                 <textarea name="razoes" class="form-control" rows=9></textarea>
               </div>
-              <div class="container" style="margin:20px 0 100px 0;">
-                <input type="submit" value="Enviar" name="" class="btn btn-primary col-2">
+              <div class="container">
+                <input type="submit" value="Enviar" name="" class="btn btn-primary col-2 mb-4">
               </div>
             </div>
           </form>
