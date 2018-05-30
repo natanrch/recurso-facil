@@ -3,7 +3,7 @@
 	$recurso = new Recurso();
 	$lista = $recurso->listar();
 ?>
-
+<?php require_once 'header.php'; ?>
 <table>
 
 <?php foreach ($lista as $l): ?>
@@ -15,3 +15,4 @@
 
 <?php endforeach ?>
 </table>
+<?php require_once 'footer.php'; ?>
