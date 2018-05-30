@@ -1,5 +1,9 @@
 <?php
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 require_once 'classes/Julgamento.php';
 
 $julgamento = new Julgamento();
@@ -13,3 +17,4 @@ $julgamento->recurso = $recurso;
 var_dump($julgamento);
 
 $julgamento->inserir();
+header("Location: lista-recursos.php");

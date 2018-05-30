@@ -1,5 +1,7 @@
 <?php
 
+require_once 'classes/Conexao.php';
+
 class Julgamento
 {
 	public $id;
@@ -8,10 +10,10 @@ class Julgamento
 
 	public function inserir()
 	{
-		$query = "INSERT INTO julgamentos (resposta, recurso_id, ) VALUES
+		$query = "INSERT INTO julgamentos (resposta, recurso_id) VALUES
 		(
 		'".$this->resposta."',
-		".$this->recurso.", 
+		".$this->recurso."
 		)";
         $conexao = Conexao::pegarConexao();
         $conexao->exec($query);
