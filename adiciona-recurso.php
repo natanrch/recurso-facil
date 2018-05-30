@@ -9,9 +9,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-echo 'página funciona';
 
-$email = 'div@email.com';
+$email = 'natan.rocha.batista@gmail.com';
 $usuario = new Usuario($email);
 
 //trata arquivo cnh
@@ -73,4 +72,4 @@ $recurso->razoes = $_POST['razoes'];
 var_dump($recurso);
 
 $resultado = $recurso->inserir();
-//header("Location: user.php");
+header("Location: user.php");
