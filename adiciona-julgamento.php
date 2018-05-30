@@ -17,3 +17,4 @@ $julgamento->recurso = $recurso;
 var_dump($julgamento);
 
 $julgamento->inserir();
+header("Location: lista-recursos.php");
