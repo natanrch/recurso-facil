@@ -4,7 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require_once 'logica-login.php';
-// verificaUsuario();
+verificaUsuario();
 ?>
 
 <?php require_once 'header.php'; ?>
