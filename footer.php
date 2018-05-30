@@ -1,5 +1,5 @@
 <footer>
-        <nav class="bg-dark navbar fixed-bottom ">
+        <nav class="bg-dark navbar ">
             <div class="container">
                 <div class="row justify-content-start">
                     <div class="col-md-4">
