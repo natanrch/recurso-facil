@@ -55,9 +55,11 @@ $usuarioCarregado = $usuario->construirPorId($recurso->usuario);
 </table>
 <p class="border"><?= $recurso->razoes ?></p>
 
-<form method="post" action="adiciona-julgamento">
-	<label  for="julgamento">Julgamento:</label>
-	<textarea class="form-control" name="julgamento"></textarea>
+<form method="post" action="adiciona-julgamento.php" class="form-control">
+	<input type="hidden" name="recurso_id" value="<?= $recurso->id ?>">
+	<label class="form-control" for="resposta">Julgamento: </label>
+	<textarea class="form-control" name="resposta"></textarea>
+	<input type="submit" name="enviar">
 </form>
 
 <?php require_once 'footer.php'; ?>
