@@ -45,7 +45,6 @@ class Usuario
         foreach ($lista as $linha) {
             $this->senha = $linha['senha'];
             $this->email = $linha['email'];
-
             $this->id = $linha['id'];
             $this->nome = $linha['nome'];
         }
