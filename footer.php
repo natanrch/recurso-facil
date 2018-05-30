@@ -1,5 +1,5 @@
 <footer>
-        <nav class="bg-dark navbar mt-5">
+        <nav class="bg-dark navbar">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 mt-4">
